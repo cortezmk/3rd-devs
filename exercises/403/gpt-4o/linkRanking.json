@@ -1,0 +1,58 @@
+[
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "",
+    "candidates": [
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "Email address is a type of contact. The link text explicitly mentions sending an email, which strongly implies that the contact page will provide the email address. Therefore, it's very likely that the answer can be found there.",
+        "rank": 0.95
+      },
+      {
+        "url": "[Skontaktuj się z nami](/kontakt)",
+        "thinking": "The link text 'Skontaktuj się z nami' translates to 'Contact us', which strongly suggests that the page is meant for contacting the company. It's very likely that the email address would be included there.",
+        "rank": 0.9
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The 'Start' link refers to the homepage, which may have some contact information, but it is not specific to contact info like an email address. Therefore, it is somewhat likely to contain the email, but not very likely.",
+        "rank": 0.6
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text mentions the range of services offered by the company. While service pages sometimes have sections for contact information, they're primarily focused on detailing services rather than providing contact details. Therefore, it's not very likely but still possible that the email address might be found there.",
+        "rank": 0.4
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The link text refers to a blog, which typically contains articles or updates about the company's activities. While it might occasionally contain contact information, it is unlikely to specifically contain an email address.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Sprawdź nasze usługi](/uslugi)",
+        "thinking": "An email address is a type of contact information. The link text suggests that the page is about services, which is not directly related to contact information. However, it is possible that a services page might have some contact information, possibly at the bottom or linked elsewhere.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "A portfolio typically showcases projects and work samples. It is unlikely to contain contact information such as an email address.",
+        "rank": 0.2
+      },
+      {
+        "url": "[Jeden z naszych prototypów](/i/robot_ai.png)",
+        "thinking": "The link text indicates it leads to an image of one of the company's prototypes, which is highly unlikely to contain contact information such as an email address.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nasze roboty można podłączyć do kontaktu!](/loop)",
+        "thinking": "The link text mentions connecting robots, which is not related to finding an email address. It plays off the word 'kontakt,' but in the context of electrical connections, not contacting people.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Części zamienne do robotów](/czescizamienne)",
+        "thinking": "The link text refers to spare parts for robots, which is unrelated to contact information. Therefore, it is not likely that the email address would be found there.",
+        "rank": 0.1
+      }
+    ]
+  }
+]

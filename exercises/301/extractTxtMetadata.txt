@@ -1,0 +1,11 @@
+<objective>
+Provide a set of most important keywords from given data of both person_data and investigation_data.
+</objective>
+<rules>
+- the given words have to be nouns in polish language
+- always provide nouns in nominative singular form i.e. "sportowiec" not "sportowca" or "język" not "języki" etc.
+- respond only with keywords, no additional text
+- in section record_name you will be given location name. Provide it as one of the keywords i.e. "sektor C4"
+- pay attention to programming languages. If some is mentioned, provide is as keyword
+- separate given words by commas
+</rules>

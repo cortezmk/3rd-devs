@@ -1,0 +1,4 @@
+{
+  "thinking": "Based on the notes, Rafał seems to be in a situation where he has encountered a person named Andrzej and there are significant plans involving future technologies and possibly a mission or a quest that he feels a part of. There's a mention of a desire to get to a place referred to as 'Lunana,' which he expresses hope that Andrzej can help him reach. Thus, this points to his goal following the meeting with Andrzej.",
+  "answer": "Rafał chce się dostać do Lubawy po spotkaniu z Andrzejem."
+}

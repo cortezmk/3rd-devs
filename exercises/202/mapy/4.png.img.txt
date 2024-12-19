@@ -1,0 +1,47 @@
+{
+  "thinking": "The map fragment shows a portion of a city with labeled streets and a notable building. I will identify the streets, their connections, and any significant landmarks visible.",
+  "response": {
+    "streets": [
+      {
+        "name": "Cmentarzy ewangelicko-augsburski",
+        "type": "cemetery",
+        "location": "central part of the map"
+      },
+      {
+        "name": "Cmentarna",
+        "location": "below the cemetery, indicates a street name"
+      },
+      {
+        "name": "Paskowa",
+        "location": "to the right side of the cemetery"
+      },
+      {
+        "name": "534",
+        "type": "road",
+        "location": "on the left side of the map, connecting to the main road"
+      }
+    ],
+    "landmarks": [
+      {
+        "type": "cemetery",
+        "name": "Cmentarzy ewangelicko-augsburski",
+        "description": "A notable cemetery located in the central area of the map."
+      }
+    ],
+    "transportation": [],
+    "connections": [
+      {
+        "from": "Cmentarna",
+        "to": "Cmentarzy ewangelicko-augsburski"
+      },
+      {
+        "from": "Paskowa",
+        "to": "Cmentarzy ewangelicko-augsburski"
+      },
+      {
+        "from": "534",
+        "to": "Cmentarna"
+      }
+    ]
+  }
+}

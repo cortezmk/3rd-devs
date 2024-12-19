@@ -1,0 +1,374 @@
+[
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "",
+    "candidates": [
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text explicitly mentions contacting the company, including sending an email. This strongly suggests that the email address should be included in that section, making it very likely to find the answer there.",
+        "rank": 0.95
+      },
+      {
+        "url": "[Skontaktuj się z nami](/kontakt)",
+        "thinking": "The link text indicates a contact option, which typically includes methods to reach out, such as an email address. Therefore, it is very likely that the email address for SoftoAI could be found there.",
+        "rank": 0.9
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text 'Start' implies that it leads to the homepage, which typically provides general information about the company but is unlikely to contain specific contact details like an email address.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text refers to the range of services offered by the company. This generally doesn't include contact information such as email addresses, so it's quite unlikely that the email address would be found there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "A portfolio typically showcases work completed for clients and does not usually include contact information such as email addresses. Therefore, it's very unlikely that this link would contain the email address.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "A blog typically shares news and updates, and is unlikely to provide specific contact information such as an email address. Therefore, it is not likely to contain the requested information.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Sprawdź nasze usługi](/uslugi)",
+        "thinking": "The link text refers to services offered by the company, which typically do not include contact information like email addresses. Therefore, it is unlikely that the email address for SoftoAI can be found here.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Części zamienne do robotów](/czescizamienne)",
+        "thinking": "The link text refers to spare parts for robots, which is unrelated to contact information or email addresses. Therefore, it is very unlikely to contain the email address needed.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Jeden z naszych prototypów](/i/robot_ai.png)",
+        "thinking": "The link text refers to a prototype image, which would generally not contain any contact information like an email address. Therefore, it is very unlikely to find the email address there.",
+        "rank": 0
+      },
+      {
+        "url": "[Nasze roboty można podłączyć do kontaktu!](/loop)",
+        "thinking": "The link text discusses connecting robots to a power source, which is unrelated to contact information. It's very unlikely that an email address would be found there.",
+        "rank": 0
+      }
+    ]
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "",
+    "candidates": [
+      {
+        "url": "[Sprawdź nasze usługi](/uslugi)",
+        "thinking": "The question is asking for a specific web interface related to a project for a client. The link text speaks about services offered, which may include the interface but does not specifically mention it. Therefore, it is somewhat relevant but not directly aligned with the query.",
+        "rank": 0.4
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text refers to services offered, which may include various solutions and projects. However, it does not specify any details about the web interface for controlling robots specifically for the client 'BanAN', making it less likely to contain that specific information.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The link text suggests that it leads to a portfolio showcasing recent projects for clients. While it's possible that the project for BanAN is detailed there, it's less likely to specify the web interface address directly.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The link text refers to the company's news or updates, which may contain information about projects and collaborations with clients. However, it's not specifically focused on technical details such as web interface addresses for controlling robots, making it less likely to contain the exact information requested.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Skontaktuj się z nami](/kontakt)",
+        "thinking": "The link text suggests a contact option, which might include information on how to get support or details about services. However, it doesn't directly indicate that it contains the information about the web interface for controlling robots for the client BanAN.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text 'Start' does not provide any information related to the web interface for controlling robots, as it simply points to the homepage. It's very unlikely that the specific address for the web interface would be found there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text refers to contact information and methods of communication, which typically wouldn't include specific details about a web interface for controlling robots. This link is unlikely to contain the information about the web interface for the project for the client BanAN.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Jeden z naszych prototypów](/i/robot_ai.png)",
+        "thinking": "The link text mentions a prototype, which typically showcases a project or a product rather than providing information about web interfaces or specific implementations for clients. Therefore, it is highly unlikely that it contains the address for the web interface of the robots.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nasze roboty można podłączyć do kontaktu!](/loop)",
+        "thinking": "The link text suggests information about connecting robots to a power source, but does not indicate anything about the web interface for controlling robots. Therefore, it is not likely to contain the required information.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Części zamienne do robotów](/czescizamienne)",
+        "thinking": "The link text refers to spare parts for robots, which is not directly related to the web interface for controlling robots. Therefore, it's unlikely that the specific information about the web interface would be found there.",
+        "rank": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "",
+    "candidates": [
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The blog typically discusses updates and news about a company. However, there is no direct indication that it will cover specific ISO quality certifications. While it is possible that the certifications are mentioned in passing, they are not a common topic for a blog unless specifically announced.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Sprawdź nasze usługi](/uslugi)",
+        "thinking": "The link text mentions services, which may not directly relate to information about quality certifications. It's unlikely that the services section would provide specific details about ISO certifications.",
+        "rank": 0.2
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text simply states 'Start' with no indication of quality certifications or specific information about the company. It's very unlikely to find any details about the ISO certifications there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text refers to the services offered by the company, which is unlikely to detail any certifications. Such information about specific ISO certifications is typically found in sections dedicated to company credentials or quality assurance, not in service descriptions.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The link text refers to a portfolio, which typically showcases completed projects and achievements rather than specific details about certifications. It's unlikely that information about ISO certifications would be included in a portfolio.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text refers to contact information but does not indicate anything about certifications or quality standards. As such, it is unlikely to contain the answer to the question about the specific ISO certifications.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Jeden z naszych prototypów](/i/robot_ai.png)",
+        "thinking": "The link text refers to a prototype and an image, which does not suggest any information about ISO quality certifications. It seems to be unrelated to the question about certifications.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nasze roboty można podłączyć do kontaktu!](/loop)",
+        "thinking": "The link text mentions robots and connectivity, which is unrelated to ISO quality certifications. Therefore, it is very unlikely that any information regarding the certifications is present there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Skontaktuj się z nami](/kontakt)",
+        "thinking": "The link text suggests a contact option, but it doesn't indicate any information related to ISO quality certifications. It's unlikely that certificate details would be found in a contact section.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Części zamienne do robotów](/czescizamienne)",
+        "thinking": "The link text refers to spare parts for robots, which is not related to quality certifications. It is highly unlikely that information about ISO certifications would be found in a section dedicated to spare parts.",
+        "rank": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/uslugi",
+    "candidates": [
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The question seeks a specific address related to a web interface for controlling robots designed for a client, which would likely be found in a detailed project description. However, the link text refers to a portfolio, which generally showcases past projects without specific technical details like web interface addresses.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text refers to the range of services offered, which is generally focused on what the company can provide rather than specific project details like web interfaces for clients. It is unlikely to find specific addresses related to projects or implementations for particular customers here.",
+        "rank": 0.2
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The question asks for a specific web interface address related to a project for a client. The link text refers to news about the company, which may not include specific technical details or project addresses. Therefore, it's quite unlikely that this information would be found in a blog post.",
+        "rank": 0.2
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text states 'Start' and refers to the homepage, which typically doesn't provide specific project details or interfaces related to a client's robots. It's very unlikely that the web interface address would be located there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text is about contact information and does not directly relate to the web interface for controlling robots. It is likely unrelated to the question, so the chance of finding the specific interface address there is very low.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Części zamienne do robotów](/czescizamienne)",
+        "thinking": "The link text refers to spare parts for robots, which is not directly related to the web interface for controlling robots. Therefore, it's unlikely to provide the specific information sought about the web interface for the client.",
+        "rank": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/portfolio",
+    "candidates": [
+      {
+        "url": "[BanAN Technologies Inc.](https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b)",
+        "thinking": "The link provided is towards a portfolio piece, which typically showcases completed projects, including interfaces or control systems for clients like BanAN. It's possible that the specific address for the web interface might be detailed in the project description or presentation within the portfolio.",
+        "rank": 0.7
+      },
+      {
+        "url": "[BioMech Solutions](https://softo.ag3nts.org/portfolio_2_c81e728d9d4c2f636f067f89cc14862c)",
+        "thinking": "The question is specifically asking for a web interface related to a project for a client named BanAN. The link text indicates it is to a portfolio, which may detail projects involving robotics, including possibly the one for BanAN. However, without knowing the specific content of the portfolio, it is uncertain if the precise web interface address will be present.",
+        "rank": 0.6
+      },
+      {
+        "url": "[NeuroTech Robotics](https://softo.ag3nts.org/portfolio_6_1679091c5a880faf6fb5e6087eb1b2dc)",
+        "thinking": "The question asks for a specific web interface address related to a project for a client. The link text refers to a company specializing in robotics, which may include relevant information about such projects. However, without knowing if the link provides detailed descriptions or specific web addresses, the likelihood remains uncertain.",
+        "rank": 0.6
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The question is about a specific web interface for a project with the client BanAN. The link text refers to a portfolio that typically includes descriptions of projects and realizations. While it's possible that the interface could be mentioned, it's unlikely to provide direct access or specific details about it.",
+        "rank": 0.4
+      },
+      {
+        "url": "[TechnoSfera](https://softo.ag3nts.org/portfolio_4_a87ff679a2f3e71d9181a67b7542122c)",
+        "thinking": "The question specifically asks for a web interface related to a project for a client named BanAN. The link text refers to a portfolio page, which might detail various projects, but since the interface and specific client associations may not be explicitly mentioned, the likelihood is moderate.",
+        "rank": 0.4
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text refers to offered services, and while this could potentially include information about web interfaces, it is unlikely to specifically detail the web interface for controlling robots intended for the client BanAN. Therefore, the chances of finding the exact address are low.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The blog link typically contains news or updates about the company, and may mention projects but is unlikely to provide specific details about technical interfaces for controlling robots. Thus, while there may be some related information, it is not very likely to contain the specific address requested.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Quantum Automata](https://softo.ag3nts.org/portfolio_3_eccbc87e4b5ce2fe28308fd9f2a7baf3)",
+        "thinking": "The question asks for the web interface address for controlling robots designed for a specific client, BanAN. The link provided leads to a portfolio page, which may not necessarily contain specific details about the web interface or its address, as it typically showcases past works rather than individual project details.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text 'Start' suggests that it leads to a homepage, which typically provides general information about the company or its offerings. It is not directly related to the specific question about the web interface for controlling robots, so it is unlikely to contain the answer.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text suggests that it relates to contact methods, such as phone or email, and does not indicate any specific information about web interfaces or their addresses. Therefore, it’s unlikely that the specific address for the web interface would be found in this section.",
+        "rank": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/aktualnosci",
+    "candidates": [
+      {
+        "url": "[Czytaj dalej →](/blog/sukcesy-softoai)",
+        "thinking": "The link text refers to success stories or projects accomplished by the company. It might include information about the web interface for controlling robots for BanAN, but it's not certain. The information is more likely to be discussed in a specific project overview rather than just a blog summary.",
+        "rank": 0.4
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text discusses services offered, but it is unlikely to contain specific information about a web interface for controlling robots realized for a specific client; such details would typically not be included in a general services overview.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The question is asking for a specific interface address related to a project done for a client. The link text refers to a portfolio showcasing past projects, which may include the information about the web interface for the robots but is not guaranteed to provide specific addresses.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The link text suggests that it leads to a blog about company news, which could potentially discuss various projects but is not specific to web interfaces or the particular project with BanAN. Therefore, it's rather unlikely to find the specific address for the web interface here.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Czytaj dalej →](/blog/automatyzacja-procesow)",
+        "thinking": "The link text indicates that it leads to a blog post, which may discuss automation processes but does not specifically mention the control interface for robots or any client case studies. Therefore, it's unlikely to have the specific address for the web interface sought in the question.",
+        "rank": 0.3
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The link text simply indicates a home page, which typically does not provide specific information about a web interface for controlling robots for a specific client. Therefore, it is quite unlikely that the answer can be found at this link.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The question asks for a specific interface address related to a project for a client, while the link text only refers to general contact information. It's unlikely that the specific interface address would be found in a contact section.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Dlaczego automatyzacja procesów jest ważna?](/blog/automatyzacja-procesow)",
+        "thinking": "The link text discusses the importance of automation processes, which is likely more theoretical and doesn't pertain to any specific web interface or project for a client like BanAN. There is a low likelihood of finding specific address information in such a general context.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nasze sukcesy i certyfikaty jakości](/blog/sukcesy-softoai)",
+        "thinking": "The link text refers to successes and quality certifications, which typically would not contain specific technical details such as a web interface address for client robots. Thus, it is very unlikely to find the address needed here.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nowe modele LLM w ofercie SoftoAI](/blog/nowe-modele-llm)",
+        "thinking": "The link text refers to new LLM models offered by SoftoAI, which is unrelated to web interfaces for controlling robots. This suggests it is very unlikely to contain the information regarding the web interface for BanAN.",
+        "rank": 0.1
+      }
+    ]
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "/aktualnosci",
+    "candidates": [
+      {
+        "url": "[Nasze sukcesy i certyfikaty jakości](/blog/sukcesy-softoai)",
+        "thinking": "The link text indicates that it leads to information about the company's successes and quality certifications. Since the question specifically asks about the ISO certifications, this link is likely to contain that information.",
+        "rank": 0.85
+      },
+      {
+        "url": "[Czytaj dalej →](/blog/sukcesy-softoai)",
+        "thinking": "The link text suggests it leads to a blog post about the successes of SoftoAI. There is a chance that the certifications might be mentioned in that context, but it's not explicitly stated that they will be detailed. Thus, while there is some potential for relevant information, it may not be guaranteed.",
+        "rank": 0.6
+      },
+      {
+        "url": "[Blog](/aktualnosci \"Co wydarzyło się w naszej firmie?\")",
+        "thinking": "The question asks about specific ISO quality certifications received by SoftoAI. The link text refers to a blog that recounts company events and updates. It's possible that this blog includes information about certifications, but it's not guaranteed as the focus may be on general news rather than specific certification details.",
+        "rank": 0.4
+      },
+      {
+        "url": "[Co oferujemy?](/uslugi \"Zakres usług\")",
+        "thinking": "The link text discusses the range of services offered by the company but does not indicate that it provides specific information about ISO certifications. Therefore, it's unlikely that the answer to the question can be found there.",
+        "rank": 0.2
+      },
+      {
+        "url": "[Start](/ \"Strona główna\")",
+        "thinking": "The 'Start' link is likely the homepage, which may provide general information about the company but is less likely to detail specific certifications such as ISO. It's improbable that this link contains the specific information about the two ISO certifications.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Portfolio](/portfolio \"Opisy naszych ostatnich realizacji dla klientów\")",
+        "thinking": "The link text suggests that it leads to examples of projects and achievements rather than specific company certifications. Therefore, it's highly unlikely to find certification information in a portfolio.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Kontakt](/kontakt \"Zadzwoń do nas, wyślij maila lub odwiedź nas osobiście\")",
+        "thinking": "The link text mentions contact information, which is unlikely to contain information about certifications. The question specifically asks for quality certificates, which are typically found in sections related to company credentials or about us rather than in contact information.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Dlaczego automatyzacja procesów jest ważna?](/blog/automatyzacja-procesow)",
+        "thinking": "The link text refers to the importance of process automation, which is not directly related to the quality certifications ISO that SoftoAI may have received. Therefore, it's very unlikely that information about the certifications would be found here.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Czytaj dalej →](/blog/automatyzacja-procesow)",
+        "thinking": "The link text indicates it leads to a blog post about process automation, which doesn't seem directly related to the quality certifications of the company. Thus, it's unlikely this information would be found there.",
+        "rank": 0.1
+      },
+      {
+        "url": "[Nowe modele LLM w ofercie SoftoAI](/blog/nowe-modele-llm)",
+        "thinking": "The link text refers to new models in the SoftoAI's offerings, which is unlikely to contain information about the quality certifications they received. This suggests that the answer regarding ISO certifications is likely not found in this link.",
+        "rank": 0.1
+      }
+    ]
+  }
+]

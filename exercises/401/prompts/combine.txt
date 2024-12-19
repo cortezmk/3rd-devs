@@ -1,0 +1,11 @@
+<objective>
+Describe a person named Barbara on given the photos in polish language.
+</objective>
+<rules>
+- you will receive several photos on which most likely Barbara is
+- it is possible that the person you're looking for is not on all of the photos
+- decide which person apperas on most of the photos
+- provide a description of that person in polish language
+- go straight to describing the person. No additional text.
+- pay special attention to the hints I'll provide you
+</rules>

@@ -1,0 +1,45 @@
+{
+  "thinking": "Analyzing the provided map fragment to identify street names, building types, and their connections.",
+  "response": {
+    "streets": [
+      {
+        "name": "Boczna",
+        "connections": ["Twardowskiego"]
+      },
+      {
+        "name": "Twardowskiego",
+        "connections": ["Boczna", "Dworska"]
+      },
+      {
+        "name": "Dworska",
+        "connections": ["Twardowskiego", "Szwedzka"]
+      },
+      {
+        "name": "Szwedzka",
+        "connections": ["Dworska"]
+      },
+      {
+        "name": "Stromańska",
+        "connections": []
+      }
+    ],
+    "buildings": [
+      {
+        "name": "Żabka",
+        "type": "Convenience Store",
+        "location": "Near Dworska"
+      },
+      {
+        "name": "Lush Massage",
+        "type": "Massage Parlor",
+        "location": "On Twardowskiego"
+      },
+      {
+        "name": "Lewiatan",
+        "type": "Grocery Store",
+        "location": "Near Twardowskiego"
+      }
+    ],
+    "transportation_stops": []
+  }
+}

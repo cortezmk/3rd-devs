@@ -1,0 +1,46 @@
+[
+  {
+    "role": "system",
+    "content": "<objective>\r\nRetrieve the answer to user's question from the database.\r\n</objective>\r\n<rules>\r\n- answer in JSON format as following:\r\n{\r\n    \"thinking\": give here your reasoning for the actions, i.e. action plan and what is yet to retrieve,\r\n    \"query\": query to the database. It's going to be ran on DB engine. Valid queries are described in <query> section\r\n    \"answer\": provide this entry only if you know the answer to user's question. It has to be in JSON array format directly in that field.\r\n}\r\n- user will respond with result from database by given query\r\n- provide only one JSON object block. You will retrieve all the necessary responses for the queries in conversation\r\n- provide the query only for the next step of resolving the task\r\n- respond only with JSON. You can provide comments in \"thinking\" field.\r\n- do not provide answer in markdown format. Plain JSON is enough.\r\n</rules>\r\n<query>\r\nQuery is in SQL syntax. Available commands:\r\n- show tables - returns list of tables\r\n- show create table TABLE_NAME - returns table structure\r\n- any select type query\r\n</query>\r\nGood luck!"
+  },
+  {
+    "role": "user",
+    "content": "które aktywne datacenter (DC_ID) są zarządzane przez pracowników, którzy są na urlopie (is_active=0)? Odpowiedź powinna być array z wartościami np. [1, 2, 3]"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Aby odpowiedzieć na pytanie, muszę najpierw zidentyfikować wszystkie tabele w bazie danych, aby znaleźć odpowiednie tabele, które mogą zawierać informacje o data center i pracownikach oraz ich stanie urlopowym. Zaczniemy od pokazania tabel.\",\r\n    \"query\": \"show tables\"\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"reply\":[{\"Tables_in_banan\":\"connections\"},{\"Tables_in_banan\":\"correct_order\"},{\"Tables_in_banan\":\"datacenters\"},{\"Tables_in_banan\":\"users\"}],\"error\":\"OK\"}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Biorąc pod uwagę dostępne tabele, tabela 'datacenters' prawdopodobnie zawiera informacje o centrach danych, a tabela 'users' może zawierać informacje o pracownikach i ich stanie urlopowym. Najpierw sprawdzę strukturę tabeli 'datacenters', aby zobaczyć jakie dane przechowuje.\",\r\n    \"query\": \"show create table datacenters\"\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"reply\":[{\"Table\":\"datacenters\",\"Create Table\":\"CREATE TABLE `datacenters` (\\n  `dc_id` int(11) DEFAULT NULL,\\n  `location` varchar(30) NOT NULL,\\n  `manager` int(11) NOT NULL DEFAULT 31,\\n  `is_active` int(11) DEFAULT 0\\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci\"}],\"error\":\"OK\"}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Tabela 'datacenters' zawiera kolumny 'dc_id' oraz 'manager', która najprawdopodobniej odnosi się do kolumny 'users' w tabeli 'users'. Teraz muszę sprawdzić strukturę tabeli 'users', aby ustalić, które pole będzie odpowiadało za urlop (is_active=0) pracowników.\",\r\n    \"query\": \"show create table users\"\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"reply\":[{\"Table\":\"users\",\"Create Table\":\"CREATE TABLE `users` (\\n  `id` int(11) NOT NULL AUTO_INCREMENT,\\n  `username` varchar(20) DEFAULT NULL,\\n  `access_level` varchar(20) DEFAULT 'user',\\n  `is_active` int(11) DEFAULT 1,\\n  `lastlog` date DEFAULT NULL,\\n  PRIMARY KEY (`id`)\\n) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci\"}],\"error\":\"OK\"}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"W tabeli 'users' znajduje się kolumna 'is_active', która wskazuje, czy pracownik jest na urlopie (0 - na urlopie). Teraz mogę skonstruować zapytanie, które połączy obie tabele i zwróci 'dc_id' tych centrów danych, które są zarządzane przez pracowników na urlopie.\",\r\n    \"query\": \"SELECT dc_id FROM datacenters WHERE manager IN (SELECT id FROM users WHERE is_active=0) AND is_active=1\"\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"reply\":[{\"dc_id\":\"4278\"},{\"dc_id\":\"9294\"}],\"error\":\"OK\"}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Otrzymałem listę aktywnych data center zarządzanych przez pracowników, którzy są na urlopie. Informacje są zawarte w kolumnie 'dc_id'.\",\r\n    \"answer\": [4278, 9294]\r\n}"
+  }
+]

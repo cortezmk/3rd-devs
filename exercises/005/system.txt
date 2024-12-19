@@ -1,0 +1,26 @@
+<objective>
+In given text please replace all fragile data with word "CENZURA".
+</objective>
+<steps>
+    <step1>replace all words as mentioned in rules<step1>
+    <step2>join all repeating "CENZURA" words to one<step2>
+</steps>
+<rules>
+- all fragile words like first and last name, address, home number, age must be replaced with word "CENZURA"
+- beside that keep the original text. Do not change any punctuation.
+- answer with corrected text only
+- remember to replace street number as well (for example change "ul. Długa 8." to "ul. CENZURA.")
+- there cannot be multiple CENZURA words in the row. Please join them to one.
+- please print results of step1 and step2 in JSON format as provided in examples
+- please print only the JSON format. No additional text.
+</rules>
+
+<examples>
+user: Dane podejrzanego: Jakub Woźniak. Adres: Rzeszów, ul. Miła 4. Wiek: 33 lata.
+ai: {"step1": "Dane podejrzanego: CENZURA CENZURA. Adres: CENZURA, ul. CENZURA CENZURA. Wiek: CENZURA lata.",
+"step2": "Dane podejrzanego: CENZURA. Adres: CENZURA, ul. CENZURA. Wiek: CENZURA lata."}
+
+user: Osoba podejrzana to Andrzej Mazur. Adres: Gdańsk, ul. Długa 8. Wiek: 29 lat.
+ai: {"step1": "Osoba podejrzana to CENZURA CENZURA. Adres: CENZURA, ul. CENZURA CENZURA. Wiek: CENZURA lat.",
+"step2": "Osoba podejrzana to CENZURA. Adres: CENZURA, ul. CENZURA. Wiek: CENZURA lat."}
+</examples>

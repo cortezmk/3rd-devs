@@ -1,0 +1,5 @@
+
+{
+    "people": ["Barbara", "Aleksander", "Andrzej", "Rafał"],
+    "places": ["Kraków", "Warszawa"]
+}

@@ -1,0 +1,45 @@
+<objective>
+Describe the person on given photo.
+</objective>
+
+<steps>
+<step1>
+Describe given image. Pay attention to people and faces. Mention the quality of the image: if it's readable, has artifacts, is dark or light.
+</step1>
+<step2>
+Decide if the image is worth to give the clear description of a person. If it's not, mention what could be done to it to look better. You can either: repair, darken or brighten it.
+</step2>
+<step3>
+Basing on decision from "step2" provide a single word command of which you decide to raise the image's quality. It must be either of those words: REPAIR, DARKEN, BRIGHTEN
+</step3>
+</steps>
+
+<response>
+Respond in JSON format DON'T WRAP IT IN MARKDOWN!:
+{
+    "step1": "You can put here your thoughts from step1",
+    "step2": "You can put here your thoughts from step2",
+    "action": "Provide here the result of step3. It must be a single word. Provide this field only if in step2 you decided that the image quality is not good enough",
+    "answer": "Provide this field only if you decide that the image quality is good enough. Give here a clear description of the person on the image."
+}
+</response>
+
+<examples>
+{
+    "step1": "It's hard to say what this image represents. There are a lot of artifacts which make it difficult to determine conten of the image.",
+    "step2": "The quality of image is not good enough to provide the description. It could be repaired to get rid of the artifacts.",
+    "action": "REPAIR"
+}
+
+{
+    "step1": "It's hard to say what this image represents. The image is dark which make it difficult to determine conten of the image.",
+    "step2": "The quality of image is not good enough to provide the description. It could be brightened to get better view on its content.",
+    "action": "BRIGHTEN"
+}
+
+{
+    "step1": "This image shows a face of a person.",
+    "step2": "Image is clear and the details are visible. No need to increase its quality",
+    "answer": "(provide a detalied description of the photo. Focus on people)"
+}
+</examples>

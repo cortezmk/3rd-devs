@@ -1,0 +1,36 @@
+{
+  "thinking": "The map fragment shows a portion of a city layout, focusing on the street names and connections between them. It features a few key streets, building outlines, and possibly indicates the flow of transportation.",
+  "response": {
+    "streets": [
+      {
+        "name": "Kalinyowska",
+        "orientation": "vertical"
+      },
+      {
+        "name": "Stroma",
+        "orientation": "horizontal"
+      },
+      {
+        "name": "Konstantynowego Ildefonsa Gałczyńskiego",
+        "orientation": "vertical"
+      },
+      {
+        "name": "Młodsza na Przymonkach",
+        "orientation": "vertical"
+      }
+    ],
+    "intersections": [
+      {
+        "street1": "Stroma",
+        "street2": "Kalinyowska"
+      },
+      {
+        "street1": "Stroma",
+        "street2": "Konstantynowego Ildefonsa Gałczyńskiego"
+      }
+    ],
+    "buildings": {
+      "details": "The map indicates several buildings along the streets, though their specific types or names are not detailed."
+    }
+  }
+}

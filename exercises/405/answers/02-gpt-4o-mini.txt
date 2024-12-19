@@ -1,0 +1,4 @@
+{
+  "thinking": "Based on the notes, it appears that the involvement of a character named Adam is pivotal to the decision for Rafał to travel in time. Adam made calculations regarding the time travel and the significance of the year Rafał found himself in. This leads me to conclude that Adam is the one who proposed the idea of time travel, as he is actively involved in the planning and execution of the technology behind it.",
+  "answer": "Adam"
+}

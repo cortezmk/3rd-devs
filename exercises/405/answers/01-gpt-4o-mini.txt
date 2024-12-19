@@ -1,0 +1,4 @@
+{
+  "thinking": "Rafał wspomniał o powrocie do momentu, w którym wszystko zostało zaplanowane na 11 listopada 2024. Wiadomo, że wydarzenia, w których uczestniczył, obejmują omawianie rozwoju technologii i czasów do roku 2024 i 2023, co sugeruje, że aktualny rok to coś przed tymi latami. Z kontekstu wynika, że Rafał może być w roku 2025, jako że 2024 nie jest możliwym rokiem jego obecności.",
+  "answer": 2019
+}

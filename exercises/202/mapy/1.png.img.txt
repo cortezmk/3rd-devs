@@ -1,0 +1,38 @@
+{
+  "thinking": "I see a simple map fragment showing connections between streets and the presence of transportation stops. The names of the streets are visible, along with some indication of building structures in the area. The layout resembles a section of a city grid.",
+  "response": {
+    "streets": [
+      {
+        "name": "Kalinowa",
+        "orientation": "northwest"
+      },
+      {
+        "name": "Brzeżna",
+        "orientation": "north"
+      },
+      {
+        "name": "Chełmińska",
+        "orientation": "vertical"
+      },
+      {
+        "name": "Chopina",
+        "orientation": "south"
+      }
+    ],
+    "intersection": {
+      "Chełmińska": {
+        "connects_to": ["Chopina"],
+        "layout": "T-junction"
+      }
+    },
+    "buildings": {
+      "type": "mixed-use",
+      "status": "visible adjacent to Chełmińska street"
+    },
+    "transportation_stops": {
+      "location": "along Chełmińska street",
+      "quantity": 3,
+      "icon": "bus stop"
+    }
+  }
+}

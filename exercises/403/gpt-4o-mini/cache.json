@@ -1,0 +1,95 @@
+[
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "",
+    "answer": {
+      "thinking": "I am scanning the provided webpage content for any sections that mention contact information, particularly focusing on an email address for SoftoAI.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "/kontakt",
+    "answer": {
+      "thinking": "I am looking through the provided webpage scrap to find the email address for SoftoAI. The contact information typically contains an email segment that should directly answer the query.",
+      "isOk": true,
+      "answer": "kontakt@softoai.whatever"
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "",
+    "answer": {
+      "thinking": "I am searching the provided markdown scrap for any mention of a web interface address for controlling robots specifically developed for the company BanAN.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/uslugi",
+    "answer": {
+      "thinking": "I am looking through the provided webpage content to find any mentions of a web interface for controlling robots specifically for the client company BanAN. I am trying to see if there is a specific section that may refer to this client or a link to an interface.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/portfolio",
+    "answer": {
+      "thinking": "Searching for any mention of a web interface or control panel related to the robots developed for BanAN.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "/aktualnosci",
+    "answer": {
+      "thinking": "Przeglądam zawartość strony, aby znaleźć informację o adresie interfejsu webowego do sterowania robotami dla firmy BanAN. Szukam wskazówek w kontekście oferowanych usług lub realizacji w portfolio.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b",
+    "answer": {
+      "thinking": "I am examining the text for any mention of a web interface address designed for the client BanAN. The text includes project details and mentions an interface for remote programming of industrial robots.",
+      "isOk": true,
+      "answer": "https://banan.ag3nts.org"
+    }
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "",
+    "answer": {
+      "thinking": "I am looking through the provided content to find any information about the quality certifications that SoftoAI has received, specifically ISO certifications. The text discusses the company's services and technologies but does not mention any specific certifications.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "/aktualnosci",
+    "answer": {
+      "thinking": "I am looking for mentions of quality certifications received by SoftoAI on the provided webpage text, especially any mention of ISO certifications.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "/blog/sukcesy-softoai",
+    "answer": {
+      "thinking": "I am analyzing the provided text to find specific information regarding the quality certificates received by SoftoAI.",
+      "isOk": true,
+      "answer": [
+        "ISO 9001",
+        "ISO/IEC 27001"
+      ]
+    }
+  }
+]

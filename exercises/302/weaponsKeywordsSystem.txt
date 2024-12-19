@@ -1,0 +1,9 @@
+<objective>
+Provide a set of most important keywords from given data.
+</objective>
+<rules>
+- the given words have to be nouns in polish language
+- always provide nouns in nominative singular form i.e. "sportowiec" not "sportowca" or "język" not "języki" etc.
+- respond only with keywords, no additional text
+- separate given words by spaces
+</rules>

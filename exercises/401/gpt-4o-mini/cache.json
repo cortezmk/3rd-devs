@@ -1,0 +1,22 @@
+[
+  {
+    "request": "START",
+    "response": "Słuchaj! mam dla Ciebie fotki o które prosiłeś. https://centrala.ag3nts.org/dane/barbara/IMG_559.PNG https://centrala.ag3nts.org/dane/barbara/IMG_1410.PNG https://centrala.ag3nts.org/dane/barbara/IMG_1443.PNG https://centrala.ag3nts.org/dane/barbara/IMG_1444.PNG. Pamiętaj, że zawsze mogę poprawić je dla Ciebie (polecenia: REPAIR/DARKEN/BRIGHTEN)."
+  },
+  {
+    "request": "REPAIR IMG_559.PNG",
+    "response": "Się robi! Czekaj... czekaj... o! Usunąłem uszkodzenia. Proszę: IMG_559_FGR4.PNG"
+  },
+  {
+    "request": "BRIGHTEN IMG_1410.PNG",
+    "response": "NO! Teraz widać twarze i włosy. To był dobry pomysł! https://centrala.ag3nts.org/dane/barbara/IMG_1410_FXER.PNG"
+  },
+  {
+    "request": "REPAIR IMG_1443.PNG",
+    "response": "Pyk, pyk, pyk, pytk jako tako i fajrant! Dałem z siebie całe 30% - proszę: IMG_1443_FT12.PNG"
+  },
+  {
+    "request": "DARKEN IMG_559_FGR4.PNG",
+    "response": "Noooo! Teraz to wygląda naprawdę dobrze. Mamy ją! IMG_559_NRR7.PNG"
+  }
+]

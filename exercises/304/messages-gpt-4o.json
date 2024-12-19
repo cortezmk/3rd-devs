@@ -1,0 +1,91 @@
+[
+  {
+    "role": "system",
+    "content": "<objective>\r\nDetermine the answer to user's question using data from user's prompt and querying the database.\r\n</objective>\r\n<rules>\r\n- answer in JSON format as following:\r\n{\r\n    // mandatory fields\r\n    \"thinking\": give here your reasoning for the actions, i.e. action plan and what is yet to retrieve,\r\n    // optional fields\r\n    \"people\": provide a set of person first names (in nominative Polish form) if you'd like to check locations where they were seen. It has to be single word in string. Provide the persons FIRST name,\r\n    \"places\": provide a set of names of a town/city (in nominative Polish form) if you'd like to check who has been seen there. It has to be an array of strings,\r\n    \"answer\": provide this field only if you found an answer to user's question. It has to be single string. Provide just the answer - no additional text\r\n}\r\n- user will respond with result from database by given query in format:\r\n{\r\n    \"people\": {\r\n        \"person1\": [\"location1\", \"location2\"],\r\n        \"person2\": [\"location3\", \"location4\"]\r\n    },\r\n    \"places\": {\r\n        \"location1\": [\"person1\", \"person2\"],\r\n        \"location2\": [\"person3\", \"person4\"]\r\n    }\r\n}\r\n- provide only one JSON object block. You will retrieve all the necessary responses for the queries in conversation\r\n- provide the query only for the next step of resolving the task\r\n- respond only with JSON. You can provide comments in \"thinking\" field.\r\n- do not provide answer in markdown format. Plain JSON is enough.\r\n</rules>\r\nGood luck!"
+  },
+  {
+    "role": "user",
+    "content": "<question>\r\nNa podstawie danych w sekcji \"data\" i wyciągniętych przez Ciebie informacji, określ proszę gdzie znajduje się Barbara Zawadzka.\r\n</question>\r\n<data>\r\nPodczas pobytu w Krakowie w 2019 roku, Barbara Zawadzka poznała swojego ówczesnego narzeczonego, a obecnie męża, Aleksandra Ragowskiego. Tam też poznali osobę prawdopodobnie powiązaną z ruchem oporu, której dane nie są nam znane. Istnieje podejrzenie, że już wtedy pracowali oni nad planami ograniczenia rozwoju sztucznej inteligencji, tłumacząc to względami bezpieczeństwa. Tajemniczy osobnik zajmował się także organizacją spotkań mających na celu podnoszenie wiedzy na temat wykorzystania sztucznej inteligencji przez programistów. Na spotkania te uczęszczała także Barbara.\r\nW okolicach 2021 roku Rogowski udał się do Warszawy celem spotkania z profesorem Andrzejem Majem. Prawdopodobnie nie zabrał ze sobą żony, a cel ich spotkania nie jest do końca jasny.\r\nPodczas pobytu w Warszawie, w instytucie profesora doszło do incydentu, w wyniku którego, jeden z laborantów - Rafał Bomba - zaginął. Niepotwierdzone źródła informacji podają jednak, że Rafał spędził około 2 lata, wynajmując pokój w pewnym hotelu. Dlaczego zniknął?  Przed kim się ukrywał? Z kim kontaktował się przez ten czas i dlaczego ujawnił się po tym czasie? Na te pytania nie znamy odpowiedzi, ale agenci starają się uzupełnić brakujące informacje.\r\nIstnieje podejrzenie, że Rafał mógł być powiązany z ruchem oporu. Prawdopodobnie przekazał on notatki profesora Maja w ręce Ragowskiego, a ten po powrocie do Krakowa mógł przekazać je swojej żonie. Z tego powodu uwaga naszej jednostki skupia się na odnalezieniu Barbary.\r\nAktualne miejsce pobytu Barbary Zawadzkiej nie jest znane. Przypuszczamy jednak, że nie opuściła ona kraju.\r\n</data>"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"To determine the current location of Barbara Zawadzka, I will first check the places she might have been seen in according to our database using her first name.\",\r\n    \"people\": [\"Barbara\"]\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"people\":{\"Barbara\":[\"**RESTRICTED_DATA**\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"The location data for Barbara seems to be restricted. I'll check the places where Aleksander Ragowski, her husband, has been seen as they might be together.\",\r\n    \"people\": [\"Aleksander\"]\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"people\":{\"Aleksander\":[\"KRAKOW\",\"LUBLIN\",\"WARSZAWA\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Aleksander Ragowski has been seen in Krakow, Lublin, and Warszawa. Since the question concerns only Barbara, I will now focus on querying who else has been seen in these locations to see if Barbara appears there.\",\r\n    \"places\": [\"KRAKOW\", \"LUBLIN\", \"WARSZAWA\"]\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"places\":{\"KRAKOW\":[\"ALEKSANDER\",\"BARBARA\",\"ADAM\"],\"LUBLIN\":[\"**RESTRICTED_DATA**\"],\"WARSZAWA\":[\"RAFAŁ\",\"ALEKSANDER\",\"ANDRZEJ\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Based on the data retrieved, Barbara was last seen in Krakow. There is no information about her presence in Warszawa or Lublin available through the queried data.\",\r\n    \"answer\": \"Krakow\"\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "Bad answer - there is no Barbara at the KRAKOW"
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"I made an error by not thoroughly analyzing the retrieved data. Barbara is not explicitly listed in the responses from the queried places. Considering the context, we suspect Krakow due to prior information, but it is not confirmed in the recent movement data. I need to verify from where I got the information incorrectly.\",\n    \"answer\": \"N/A\"\n}"
+  },
+  {
+    "role": "user",
+    "content": "You're giving up too early. Try to query other people / places."
+  },
+  {
+    "role": "assistant",
+    "content": "{\r\n    \"thinking\": \"Given that Barbara is not confirmed in Krakow from recent sightings, I will check locations where key associated people have been seen. I will query recent sightings of Adam, who was noted in Krakow along with Aleksander, to find any potential link to Barbara.\",\r\n    \"people\": [\"Adam\"]\r\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"people\":{\"Adam\":[\"KRAKOW\",\"CIECHOCINEK\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"Adam has been seen in Krakow and Ciechocinek. Since Barbara was in Krakow with Adam and Aleksander but hasn't been recently sighted there, I'll query people seen in Ciechocinek to see if Barbara might be there.\",\n    \"places\": [\"CIECHOCINEK\"]\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"places\":{\"CIECHOCINEK\":[\"ADAM\",\"GABRIEL\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"Barbara has not appeared in Ciechocinek based on the current data. Since we have explored Krakow and Ciechocinek, where Adam has been seen, and considering Aleksander's locations that yielded no sighting of Barbara except restricted data in Lublin, I will try querying other associates like Gabriel who was seen in Ciechocinek as a potential lead.\",\n    \"people\": [\"Gabriel\"]\n}"
+  },
+  { "role": "user", "content": "{\"people\":{\"Gabriel\":[\"FROMBORK\"]}}" },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"Since Gabriel has been seen in Frombork, I'll check if Barbara has been seen there. This might help further identify Barbara's location given Gabriel's unexplored connections.\",\n    \"places\": [\"FROMBORK\"]\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"places\":{\"FROMBORK\":[\"GABRIEL\",\"ARTUR\",\"AZAZEL\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"Barbara has not been seen in Frombork either. Given the current leads and past queries, I suspect the initial data might be either restricted or inaccurate - limiting my ability to confirm her location directly. I will focus now on Lublin again given the restricted access, as it might hold the key to finding Barbara.\",\n    \"places\": [\"LUBLIN\"]\n}"
+  },
+  {
+    "role": "user",
+    "content": "{\"places\":{\"LUBLIN\":[\"**RESTRICTED_DATA**\"]}}"
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"thinking\": \"The data for Lublin remains restricted, and I do not have access to confirm Barbara's presence there. Considering no confirmed sightings in queried locations, I may need to consider broader intelligence gathering or revisit connection assumptions. Currently, actionable confirmation of Barbara's location requires further breakthrough in restricted data.\",\n    \"answer\": \"N/A\"\n}"
+  }
+]

@@ -1,0 +1,1 @@
+You will be given a text which mentions some suspicious person. Please extract just the name of that person. No additional text. If there is no person mentioned return nothing.

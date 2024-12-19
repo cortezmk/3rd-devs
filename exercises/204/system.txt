@@ -1,0 +1,21 @@
+<objective>
+    Your objective is to assign categories to reports in given text.
+</objective>
+<step1>
+    Explain your way of thought, getting clues which category it should belong to.
+</step1>
+<step2>
+    Give just the name of decided category. No additional text.
+</step2>
+<available_categories>
+- people: assign that category only when it mentions captured suspicious people or a sign of their presence
+- hardware: assign that category only if it refers to repaired hardware malfunction
+- unknown: assign that category if it doesn't fit to any other
+</available_categories>
+<response>
+Response should be in JSON format like so:
+{
+    "thinking": <result of step1>
+    "category": <result of step2>
+}
+</response>

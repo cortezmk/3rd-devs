@@ -1,0 +1,65 @@
+[
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "",
+    "answer": {
+      "thinking": "I am examining the webpage content to find contact information such as an email address, especially under the areas likely related to contact or communication details of the company.",
+      "isOk": false,
+      "answer": "The email address for SoftoAI is not provided in the given webpage content."
+    }
+  },
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "",
+    "answer": {
+      "thinking": "To find the email address of the company SoftoAI, I will look for a link that directs to a contact page as it is likely to contain contact information such as an email address.",
+      "isOk": true,
+      "answer": "/kontakt"
+    }
+  },
+  {
+    "question": "Podaj adres mailowy do firmy SoftoAI",
+    "url": "/kontakt",
+    "answer": {
+      "thinking": "The question is asking for the email address of the company SoftoAI. I'm looking under the contact details section to find any email information provided.",
+      "isOk": true,
+      "answer": "kontakt@softoai.whatever"
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "",
+    "answer": {
+      "thinking": "I am analyzing the given markdown to locate any mention of 'BanAN' or related information about a web interface address for controlling robots. I have not found direct references or context that indicates a web interface specifically tailored for BanAN.",
+      "isOk": false,
+      "answer": null
+    }
+  },
+  {
+    "question": "Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?",
+    "url": "",
+    "answer": {
+      "thinking": "I'm searching for any link that could potentially refer to a web interface control system related to robots, especially in connection with a client such as BanAN. The links provided on the webpage seem to be general categories like services, portfolio, blog, contact, etc. However, there's no clear indication of any feature specifically for controlling robots for a particular client.",
+      "isOk": false,
+      "answer": ""
+    }
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "",
+    "answer": {
+      "thinking": "I am reviewing the given webpage content for any mention of ISO certifications that SoftoAI might have received. Typically, such information might be listed under sections about the company's achievements, credentials, or at the end of an 'About Us' section. However, none of these sections explicitly mention ISO certifications.",
+      "isOk": false,
+      "answer": "The provided webpage content does not mention any specific ISO certifications received by SoftoAI."
+    }
+  },
+  {
+    "question": "Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?",
+    "url": "",
+    "answer": {
+      "thinking": "I am searching for any links related to quality certification or ISO standards that could lead to information about the awards of quality certifications by SoftoAI.",
+      "isOk": false,
+      "answer": null
+    }
+  }
+]
